@@ -1,21 +1,30 @@
-# Machine Learning Project - **Mobile Price Range Prediction - Classification**
+# Netflix_Movies_-_TV_Show_Clustering_Unsupervised_ML
 
-This repository contains the code and documentation for a machine learning project focused on predicting the price range of mobile phones. The mobile phone industry is highly competitive, and understanding the factors that influence the price range is crucial for market analysis and decision-making.
+## Netflix Dataset Analysis and Recommendation System
+This project aims to analyze the Netflix Dataset of movies and TV shows until 2019, obtained from the third-party search engine Flixable. The primary objective is to group the content into relevant clusters using NLP techniques to enhance the user experience through a recommendation system. This system will help mitigate subscriber churn for Netflix, which currently boasts over 220 million subscribers.
 
-## **Project Summary**
-The goal of this project is to analyze a dataset containing various features of mobile phones and build a predictive model that can accurately classify the price range of a given phone as low, medium, high, or very high. The dataset consists of approximately 21 variables, including battery power, Bluetooth, camera quality, screen size, and more.
+Moreover, this project seeks to uncover valuable insights and trends in the streaming entertainment industry by analyzing the dataset.
 
-The project follows a structured workflow, encompassing data wrangling, exploratory data analysis (EDA), hypothesis testing, feature engineering, and machine learning model implementation. Here's a brief overview of each step:
+**Project Overview**
+The project was carried out in the following step-by-step process:
+ 
+* **Handling Null Values:** Null values in the dataset were addressed to ensure data integrity and accuracy.
 
-**Data Wrangling**: Handle missing values and unique value checks. Replace erroneous 0 values for pixel resolution height and screen width with the mean values to ensure data consistency.
+* **Managing Nested Columns:** Columns containing nested data, such as director, cast, listed_in, and country, were processed to enable better visualization and analysis.
 
-**Exploratory Data Analysis (EDA)**: Gain insights into the relationships between variables and the price range. Discover patterns, correlations, and distributions in the data. Identify significant factors affecting the price range, such as battery capacity, RAM, and pixel quality.
+* **Binning Ratings:** The rating attribute was binned into categories such as adult, children's, family-friendly, and not rated to facilitate analysis and recommendation.
 
-**Hypothesis Testing**: Perform statistical tests to validate hypotheses and identify significant factors. Handle outliers that may affect the model's performance.
+* **Exploratory Data Analysis (EDA):** EDA techniques were employed to gain insights and understand patterns and trends in the dataset, with the goal of preventing subscriber churn.
 
-**Feature Engineering**: Engineer new features or transform existing ones to enhance the model's predictive power. Select relevant features that contribute most to the price range prediction.
+* **Creating Clusters:** Clustering techniques were applied to group the content based on attributes like director, cast, country, genre, rating, and description. These attributes were tokenized, preprocessed, and vectorized using the TF-IDF vectorizer.
 
-**Machine Learning Models**: Implement machine learning algorithms to build the predictive model. Evaluate various models, including logistic regression, random forest, and XGBoost, to determine the best-performing algorithm. Tune hyperparameters for improved model performance.
+* **Dimensionality Reduction:** The dimensionality of the dataset was reduced using Principal Component Analysis (PCA) to improve performance and eliminate noise.
 
-## **Conclusion**
-This machine learning project provides insights into the factors influencing the price range of mobile phones. By leveraging the dataset's features, we successfully built a predictive model capable of accurately classifying mobile phone price ranges. The project highlights the significance of variables such as RAM, battery power, and pixel quality in determining the price range.
+* **Clustering Algorithms:** Both K-Means Clustering and Agglomerative Hierarchical Clustering algorithms were utilized to create clusters. The optimal number of clusters was determined (4 for K-Means and 2 for hierarchical clustering) using various evaluation methods.
+
+* **Content-Based Recommender System:** A content-based recommender system was developed using the cosine similarity matrix to provide personalized recommendations to users. The aim was to reduce subscriber churn by offering relevant and engaging content.
+
+**The comprehensive analysis and recommendation system developed in this project are expected to enhance user satisfaction and ultimately improve subscriber retention rates for Netflix.**
+
+## Conclusion
+By conducting this comprehensive analysis of the Netflix dataset and developing a content-based recommendation system, the project aims to enhance user satisfaction and reduce subscriber churn for Netflix. The clustering of content allows for improved grouping and organization, while the recommender system provides personalized recommendations based on user preferences. It is expected that these efforts will lead to higher user retention rates and ultimately benefit Netflix in maintaining its position as a leading streaming entertainment platform.
