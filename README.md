@@ -1,12 +1,21 @@
-The aim of this project is to analyze the Netflix Dataset of movies and TV shows until 2019, sourced from the third-party search engine Flixable. The goal is to group the content into relevant clusters using NLP techniques to improve the user experience through a recommendation system. This will help prevent subscriber churn for Netflix, which currently has over 220 million subscribers.
-Additionally, the dataset will be analyzed to uncover insights and trends in the streaming entertainment industry.
-The project followed a step-by-step process:
-Handling null values in the dataset.
-Managing nested columns (director, cast, listed_in, country) for better visualization.
-Binning the rating attribute into categories (adult, children's, family-friendly, not rated).
-Performing Exploratory Data Analysis (EDA) to gain insights for preventing subscriber churn.
-Creating clusters using attributes like director, cast, country, genre, rating, and description. These attributes were tokenized, preprocessed, and vectorized using TF-IDF vectorizer.
-Reducing the dimensionality of the dataset using PCA to improve performance.
-Employing K-Means Clustering and Agglomerative Hierarchical Clustering algorithms, determining optimal cluster numbers (4 for K-Means, 2 for hierarchical clustering) through various evaluation methods.
-Developing a content-based recommender system using cosine similarity matrix to provide personalized recommendations to users and reduce subscriber churn for Netflix.
-This comprehensive analysis and recommendation system are expected to enhance user satisfaction, leading to improved retention rates for Netflix.
+# Machine Learning Project - **Mobile Price Range Prediction - Classification**
+
+This repository contains the code and documentation for a machine learning project focused on predicting the price range of mobile phones. The mobile phone industry is highly competitive, and understanding the factors that influence the price range is crucial for market analysis and decision-making.
+
+## **Project Summary**
+The goal of this project is to analyze a dataset containing various features of mobile phones and build a predictive model that can accurately classify the price range of a given phone as low, medium, high, or very high. The dataset consists of approximately 21 variables, including battery power, Bluetooth, camera quality, screen size, and more.
+
+The project follows a structured workflow, encompassing data wrangling, exploratory data analysis (EDA), hypothesis testing, feature engineering, and machine learning model implementation. Here's a brief overview of each step:
+
+**Data Wrangling**: Handle missing values and unique value checks. Replace erroneous 0 values for pixel resolution height and screen width with the mean values to ensure data consistency.
+
+**Exploratory Data Analysis (EDA)**: Gain insights into the relationships between variables and the price range. Discover patterns, correlations, and distributions in the data. Identify significant factors affecting the price range, such as battery capacity, RAM, and pixel quality.
+
+**Hypothesis Testing**: Perform statistical tests to validate hypotheses and identify significant factors. Handle outliers that may affect the model's performance.
+
+**Feature Engineering**: Engineer new features or transform existing ones to enhance the model's predictive power. Select relevant features that contribute most to the price range prediction.
+
+**Machine Learning Models**: Implement machine learning algorithms to build the predictive model. Evaluate various models, including logistic regression, random forest, and XGBoost, to determine the best-performing algorithm. Tune hyperparameters for improved model performance.
+
+## **Conclusion**
+This machine learning project provides insights into the factors influencing the price range of mobile phones. By leveraging the dataset's features, we successfully built a predictive model capable of accurately classifying mobile phone price ranges. The project highlights the significance of variables such as RAM, battery power, and pixel quality in determining the price range.
